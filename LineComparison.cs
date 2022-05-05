@@ -8,6 +8,8 @@ namespace LineComparisonComputation
 {
     public class LineComparison
     {
+        double LineLength1 = 0;
+        double LineLength2 = 0;
        public void LengthOfLine()
         {
             Console.WriteLine("Enter the co-ordinates of first line");
@@ -34,22 +36,29 @@ namespace LineComparisonComputation
 
             //length of line 1
             double Length1 = Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2);
-            double LineLengh1=Math.Sqrt(Length1);
-            Console.WriteLine("Length of line 1 : " + LineLengh1);
+             LineLength1=Math.Sqrt(Length1);
+            Console.WriteLine("Length of line 1 : " + LineLength1);
             //length of line 2
             double Length2 = Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2);
-            double LineLengh2 = Math.Sqrt(Length2);
-            Console.WriteLine("Length of line 2 : " + LineLengh2);
+            LineLength2 = Math.Sqrt(Length2);
+            Console.WriteLine("Length of line 2 : " + LineLength2);
 
-            if (LineLengh1 == LineLengh2)
+        }
+
+        public void Compare2Lines()
+        {
+            if (LineLength1 < LineLength2)
             {
-                Console.WriteLine("Two lines are equal");
+                Console.WriteLine("Line 2 is greater than Line 1");
+            }
+            else if (LineLength1 > LineLength2)
+            {
+                Console.WriteLine("Line 1 is greater than Line 2");
             }
             else
             {
-                Console.WriteLine("Lines are not equal");
+                Console.WriteLine("Lines are equal");
             }
-
         }
 
 

@@ -9,6 +9,7 @@ namespace LineComparisonComputation
             Console.WriteLine("Welcome to Line Comparison Computation Program");
             LineComparison myobj=new LineComparison();
             myobj.LengthOfLine();
+            myobj.Compare2Lines();
         }
     }
 }
