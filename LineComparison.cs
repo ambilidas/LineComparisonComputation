@@ -12,7 +12,7 @@ namespace LineComparisonComputation
         double LineLength2 = 0;
        public void LengthOfLine()
         {
-            Console.WriteLine("Enter the co-ordinates of first line");
+            Console.WriteLine("\nEnter the co-ordinates of first line");
             Console.Write("x1= ");
             int x1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("y1= ");
@@ -44,7 +44,7 @@ namespace LineComparisonComputation
             Console.WriteLine("Length of line 2 : " + LineLength2);
 
         }
-
+        //compare the length of two lines
         public void Compare2Lines()
         {
             if (LineLength1 < LineLength2)
